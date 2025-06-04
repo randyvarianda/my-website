@@ -32,7 +32,7 @@
   </head>
   <body class="flex justify-center bg-slate-800 p-10">
     <main
-      class="flex flex-col w-[1025px] bg-slate-900 p-10 gap-10 rounded-xl border-1 border-slate-700 shadow-xl/60 shadow-slate-900"
+      class="flex flex-col w-full max-w-5xl bg-slate-900 px-4 sm:px-6 py-10 gap-10 rounded-xl border border-slate-700 shadow-xl"
     >
       <header class="flex flex-row justify-between text-white">
         <div
@@ -41,8 +41,8 @@
           <img src="assets/randy-pp.jpg" alt="React" />
         </div>
       </header>
-      <div class="wrapper flex flex-row gap-8">
-        <div class="info flex flex-col gap-8 w-[60%]">
+      <div class="wrapper flex flex-col lg:flex-row gap-8">
+        <div class="info flex flex-col gap-8 w-full lg:w-[60%]">
           <div class="title flex flex-col h-fit gap-4">
             <div class="flex flex-col h-[120px] gap-4">
               <h1 class="text-5xl text-white">Randy Varianda</h1>
@@ -106,13 +106,15 @@
             </div>
           </div>
         </div>
-        <div class="social media flex justify-start flex-col items-start gap-8">
+        <div
+          class="social media flex flex-col gap-8 w-full lg:w-[40%] items-start"
+        >
           <div
-            class="w-[320px] h-auto rotate-4 border-2 border-slate-600 rounded-xl shadow-lg/50 drop-shadow-slate-800"
+            class="w-full max-w-xs rotate-2 border-2 border-slate-600 rounded-xl shadow-lg"
           >
             <img
               src="assets/randyjpn.webp"
-              class="rounded-xl"
+              class="rounded-xl w-full"
               alt="Randy Japan"
             />
           </div>
