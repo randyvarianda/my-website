@@ -1,6 +1,7 @@
 import Typed from "typed.js";
 const typed = new Typed("#greeting", {
-  strings: ["Designer", "Developer"],
-  typeSpeed: 50,
+  strings: ["UI UX Designer", " Front-End Developer"],
+  typeSpeed: 90,
   loop: true,
+  smartBackspace: true,
 });

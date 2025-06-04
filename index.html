@@ -3,36 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Randy Varianda</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="dist/global.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap");
+
+      @layer base {
+        body {
+          font-family: "Oxanium", sans-serif;
+        }
+      }
+    </style>
   </head>
-  <body class="flex justify-center">
-    <main class="w-[1000px]">
-      <header class="flex justify-between p-4 bg-emerald-950 text-white">
-        <div>
-          <h3>Randy Varianda</h3>
+  <body class="flex justify-center bg-slate-800 p-10">
+    <main
+      class="flex flex-col w-[1000px] bg-slate-900 p-10 gap-10 rounded-xl border-1 border-slate-700 shadow-xl/60 shadow-slate-900"
+    >
+      <header class="flex flex-row justify-between text-white">
+        <div
+          class="w-[48px] h-auto border-2 border-slate-600 rounded-full shadow-md overflow-hidden"
+        >
+          <img src="assets/randy-pp.jpg" alt="React" />
         </div>
-        <nav class="flex gap-4">
+        <!-- <nav class="flex gap-4">
           <div>LinkedIn</div>
           <div>Twitter</div>
           <div>Instagram</div>
           <div>Upwork</div>
           <div>Contra</div>
-        </nav>
+        </nav> -->
       </header>
+      <div class="wrapper flex flex-row gap-8">
+        <div class="info flex flex-col gap-8 w-[60%]">
+          <div class="title flex flex-col gap-4">
+            <div class="flex flex-col h-[120px] gap-4">
+              <h1 class="text-5xl text-white">Randy Varianda</h1>
+              <h1 class="text-5xl text-white" id="greeting"></h1>
+            </div>
+            <button
+              class="bg-blue-600 shadow-xl/30 shadow-blue-600 text-white px-6 py-2 w-fit rounded-lg hover:bg-blue-700 transition border-2 border-blue-500"
+            >
+              <a href="https://randyvarianda.com">Hire Me</a>
+            </button>
+          </div>
 
-      <div class="wrapper grid grid-cols-3">
+          <div
+            class="font-light text-info space-y-4 flex flex-col text-1xl text-slate-400"
+          >
+            <p class="font-mono text-sm text-slate-600">ABOUT ME</p>
+            <p class="">
+              During college, while studying Computer Science, I aspired of
+              becoming a Front-End Developer because I loved building beautiful
+              and meaningful interfaces. But I struggled with coding, so after
+              graduation, I pursued a career as a UI UX Designer instead.
+            </p>
+
+            <p class="">
+              After 7 years of experience in design, I finally found the
+              confidence to dive into web development through the Devscale, and
+              this is my very first website built with Tailwind UI.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <p class="font-mono text-sm text-slate-600">TECH STACK</p>
+
+            <div
+              class="w-fit p-4 border-1 bg-slate-800 border-slate-700 rounded-lg grid grid-cols-3 gap-4"
+            >
+              <div class="flex flex-col gap-2 items-center">
+                <div
+                  class="w-[48px] h-auto rounded-full shadow-md overflow-hidden"
+                >
+                  <img src="assets/figma.svg" alt="Figma" class="" />
+                </div>
+                <p class="text-slate-400">Figma</p>
+              </div>
+              <div class="flex flex-col gap-2 items-center">
+                <div
+                  class="w-[48px] h-auto rounded-full shadow-md overflow-hidden"
+                >
+                  <img src="assets/Tailwind.svg" alt="Tailwind" class="" />
+                </div>
+                <p class="text-slate-400">Tailwind UI</p>
+              </div>
+              <div class="flex flex-col gap-2 items-center">
+                <div
+                  class="w-[48px] h-auto rounded-full shadow-md overflow-hidden"
+                >
+                  <img src="assets/React.svg" alt="React" />
+                </div>
+                <p class="text-slate-400">React</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social media flex justify-start flex-col items-start gap-8">
+          <div
+            class="w-[320px] h-auto rotate-4 border-2 border-slate-600 rounded-xl shadow-lg/50 drop-shadow-slate-800"
+          >
+            <img
+              src="assets/randyjpn.webp"
+              class="rounded-xl"
+              alt="Randy Japan"
+            />
+          </div>
+          <div class="flex flex-col gap-8">
+            <div class="flex flex-col w-full gap-4 font-light text-slate-400">
+              <div class="flex gap-4 items-center hover:text-white">
+                <i class="ph ph-x-logo text-xl"></i>
+                <a href="https://twitter.com/randyvrnd">Follow on Twitter</a>
+              </div>
+              <div class="flex gap-4 items-center hover:text-white">
+                <i class="ph ph-instagram-logo text-xl"></i>
+                <a href="instagram.com/randyvrnd">Follow on Instagram</a>
+              </div>
+              <div class="flex gap-4 items-center hover:text-white">
+                <i class="ph ph-linkedin-logo text-xl"></i>
+                <a href="https://www.linkedin.com/in/randy-varianda/"
+                  >Connect on LinkedIn</a
+                >
+              </div>
+              <div class="flex gap-4 items-center hover:text-white">
+                <i class="ph ph-github-logo text-xl"></i>
+                <a href="https://github.com/randyvarianda">Follow on Github</a>
+              </div>
+            </div>
+            <div class="h-[1px] w-full bg-slate-700"></div>
+
+            <div
+              class="text-slate-400 flex gap-4 items-center hover:text-white"
+            >
+              <i class="ph ph-envelope text-xl"></i>
+              <a href="mailto:rvarianda@gmail.com">rvarianda@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="wrapper grid grid-cols-3">
         <div
           class="h-40 bg-emerald-900 text-white flex justify-center items-center"
         >
-          <h2>Hello... I'm <span id="greeting"></span></h2>
+          <h1>Hello... I'm <span id="greeting"></span></h1>
         </div>
         <div class="h-40 bg-emerald-800"></div>
         <div class="h-40 bg-emerald-700"></div>
         <div class="h-40 bg-emerald-600"></div>
         <div class="h-40 bg-emerald-500"></div>
         <div class="h-40 bg-emerald-400"></div>
-      </div>
+      </div> -->
       <script src="dist/main.js"></script>
     </main>
   </body>
